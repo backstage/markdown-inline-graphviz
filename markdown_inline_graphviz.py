@@ -65,7 +65,7 @@ class InlineGraphvizPreprocessor(markdown.preprocessors.Preprocessor):
                 command = m.group('command')
                 # Whitelist command, prevent command injection.
                 if command not in SUPPORTED_COMMAMDS:
-                    raise Exception('Command not supported: %s' % command)
+                    break
                 filename = m.group('filename')
                 content = m.group('content')
                 filetype = filename[filename.rfind('.')+1:]
