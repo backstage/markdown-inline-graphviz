@@ -27,7 +27,7 @@ setup(
     author_email="cesaremoreln@gmail.com",
     description="Render inline graphs with Markdown and Graphviz (python3 version)",
     long_description="This is just a continuation of the great job of Steffen Prince (sprin/markdown-inline-graphviz) in order to get it work with pip3. If you use python 2, please use the original extension instead.",
-    long_description_content_type="text/x-rst",
+    long_description_content_type="text/markdown",
     license="MIT",
     url="https://github.com/cesaremorel/markdown-inline-graphviz",
     classifiers=[
