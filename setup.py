@@ -22,7 +22,7 @@ setup(
     name="markdown_inline_graphviz_extension",
     version=VERSION,
     py_modules=["markdown_inline_graphviz"],
-    install_requires=['Markdown>=2.3.1'],
+    install_requires=['Markdown>=3.0'],
     author="Cesar Morel",
     author_email="cesaremoreln@gmail.com",
     description="Render inline graphs with Markdown and Graphviz (python3 version)",
