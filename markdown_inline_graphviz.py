@@ -41,13 +41,12 @@ SUPPORTED_COMMAMDS = ['dot', 'neato', 'fdp', 'sfdp', 'twopi', 'circo']
 
 class InlineGraphvizExtension(markdown.Extension):
 
-    def extendMarkdown(self, md, md_globals):
+    def extendMarkdown(self, md):
         """ Add InlineGraphvizPreprocessor to the Markdown instance. """
         md.registerExtension(self)
-
-        md.preprocessors.add('graphviz_block',
-                             InlineGraphvizPreprocessor(md),
-                             "_begin")
+        md.preprocessors.register(
+            InlineGraphvizPreprocessor(md), 'graphviz_block', 40
+        )
 
 
 class InlineGraphvizPreprocessor(markdown.preprocessors.Preprocessor):
