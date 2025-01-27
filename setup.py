@@ -19,7 +19,7 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 setup(
-    name="markdown_inline_graphviz_extension",
+    name="markdown_graphviz_inline",
     version=VERSION,
     py_modules=["markdown_inline_graphviz"],
     install_requires=['Markdown>=3.0'],
